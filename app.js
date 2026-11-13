@@ -1,6 +1,6 @@
 'use strict';
 const $=s=>document.querySelector(s), content=$('#content');
-const categories=[['🛒','買い物','shop'],['🍜','飲食店','restaurant'],['🏞️','おでかけ','tourism'],['🚗','地図・移動','map'],['🌤️','天気','weather'],['🏥','病院・薬局','hospital'],['🏠','暮らし','life'],['🧮','仕事ツール','work'],['🗓️','予定・メモ','notes'],['🛡️','防災','safety'],['💰','家計・記録','money'],['🧰','マイツール','tools']];
+const categories=[['🛒','買い物','shop'],['🍜','飲食店','restaurant'],['🏞️','おでかけ','tourism'],['🚗','地図・移動','map'],['🏥','病院・薬局','hospital'],['🏠','暮らし','life'],['🗓️','予定・メモ','notes'],['🛡️','防災','safety'],['💰','家計・記録','money']];
 const kinds={shop:'supermarket',restaurant:'restaurant',tourism:'attraction',hospital:'hospital',life:'townhall'};
 const center=[35.222,138.622];let position=null,map=null,markers=null,tab='home',searchResults=[],searchTerm='',searchKind='all';
 const get=(key,fallback=[])=>{try{return JSON.parse(localStorage.getItem('fm_'+key))??fallback}catch{return fallback}};
